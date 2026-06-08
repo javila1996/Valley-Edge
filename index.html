@@ -3,78 +3,312 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Valley Edge Yard Care</title>
-  <link rel="stylesheet" href="styles/main.css"/>
+  <title>Valley Edge Yard Care | Professional Lawn & Property Maintenance</title>
+  <meta name="description" content="Valley Edge Yard Care offers professional lawn maintenance, edging, trimming, and yard cleanup in the Salt Lake Valley. Reliable scheduling, clean results, and honest service every time." />
+  <meta name="keywords" content="lawn care, yard maintenance, mowing, edging, trimming, yard cleanup, Salt Lake Valley, professional landscaping" />
+  <meta property="og:title" content="Valley Edge Yard Care" />
+  <meta property="og:description" content="Professional lawn care and property maintenance you can count on. Clean results, reliable scheduling, and honest pricing." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/main.css" />
 </head>
 <body>
-  <header class="hero">
-    <nav>
-      <h1>Valley Edge Yard Care</h1>
-      <button id="quoteBtn">Get a Quote</button>
-    </nav>
 
+  <!-- NAV -->
+  <nav class="nav" id="mainNav">
+    <div class="nav-inner">
+      <div class="nav-logo">
+        <span class="logo-mark">VE</span>
+        <span class="logo-text">Valley Edge</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#contact" class="nav-cta">Get a Quote</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#services" class="mobile-link">Services</a>
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#testimonials" class="mobile-link">Reviews</a>
+    <a href="#contact" class="mobile-link highlight">Get a Quote</a>
+  </div>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-bg">
+      <div class="hero-grass"></div>
+    </div>
     <div class="hero-content">
-      <h2>Professional Yard Care You Can Trust</h2>
-      <p>
-        Reliable lawn care and property maintenance with clean,
-        professional results every time.
-      </p>
-      <a href="#services" class="cta-btn">View Services</a>
+      <p class="hero-eyebrow">Salt Lake Valley's Trusted Crew</p>
+      <h1 class="hero-title">Your Yard.<br>Our <em>Pride.</em></h1>
+      <p class="hero-sub">Professional lawn care and property maintenance with clean, sharp results — every single time.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn-primary">Get a Free Quote</a>
+        <a href="#services" class="btn-ghost">See Our Work ↓</a>
+      </div>
+    </div>
+    <div class="hero-badge">
+      <span>Est.</span>
+      <strong>2024</strong>
     </div>
   </header>
 
+  <!-- SERVICES -->
   <section id="services" class="services">
-    <h2>Our Services</h2>
+    <div class="section-header">
+      <p class="section-eyebrow">What We Do</p>
+      <h2>Services Built for<br>Your Property</h2>
+    </div>
 
     <div class="service-grid">
-      <div class="card">
+      <div class="service-card" data-num="01">
+        <div class="service-icon">🌿</div>
         <h3>Lawn Maintenance</h3>
-        <p>Consistent mowing and lawn care for a clean appearance.</p>
+        <p>Weekly or bi-weekly mowing tailored to your grass type and growth rate. We mow clean, blow off hard surfaces, and leave your lawn looking crisp every visit.</p>
+        <ul class="service-list">
+          <li>Weekly & bi-weekly schedules</li>
+          <li>Mow, blow & go service</li>
+          <li>Height adjustment per season</li>
+        </ul>
       </div>
 
-      <div class="card">
+      <div class="service-card featured" data-num="02">
+        <div class="service-icon">✂️</div>
         <h3>Edging & Trimming</h3>
-        <p>Sharp edges and detailed trimming around your property.</p>
+        <p>The difference between a good lawn and a great one is in the edges. We deliver razor-sharp borders along driveways, sidewalks, garden beds, and fence lines.</p>
+        <ul class="service-list">
+          <li>Driveway & sidewalk edging</li>
+          <li>Fence line & bed trimming</li>
+          <li>String trimmer detail work</li>
+        </ul>
       </div>
 
-      <div class="card">
+      <div class="service-card" data-num="03">
+        <div class="service-icon">🍂</div>
         <h3>Yard Cleanup</h3>
-        <p>Seasonal cleanup and debris removal services.</p>
+        <p>From spring prep to fall leaf removal, we handle the seasonal work so you don't have to. Debris removal, clipping cleanup, and property refresh included.</p>
+        <ul class="service-list">
+          <li>Spring & fall cleanups</li>
+          <li>Leaf & debris removal</li>
+          <li>Post-storm cleanup</li>
+        </ul>
+      </div>
+
+      <div class="service-card" data-num="04">
+        <div class="service-icon">💧</div>
+        <h3>Garden Bed Care</h3>
+        <p>Keep your beds looking intentional with regular weeding, edging, and mulch refresh. We tidy up the details that make your whole property pop.</p>
+        <ul class="service-list">
+          <li>Weeding & clearing</li>
+          <li>Bed edging</li>
+          <li>Mulch refresh</li>
+        </ul>
+      </div>
+
+      <div class="service-card" data-num="05">
+        <div class="service-icon">🌲</div>
+        <h3>Shrub & Bush Trimming</h3>
+        <p>Overgrown shrubs can make even a nice yard look neglected. We shape and trim hedges, bushes, and ornamental shrubs for a clean, maintained look.</p>
+        <ul class="service-list">
+          <li>Hedge shaping</li>
+          <li>Ornamental shrub trimming</li>
+          <li>Bush removal available</li>
+        </ul>
+      </div>
+
+      <div class="service-card" data-num="06">
+        <div class="service-icon">📋</div>
+        <h3>Custom Packages</h3>
+        <p>Need a combination of services on a regular schedule? We'll build a custom maintenance plan that fits your property and your budget — no guesswork required.</p>
+        <ul class="service-list">
+          <li>Bundled service plans</li>
+          <li>Monthly billing available</li>
+          <li>Free property walkthrough</li>
+        </ul>
       </div>
     </div>
   </section>
 
-  <section class="about">
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <div class="about-image">
+      <div class="about-img-placeholder">
+        <span>📸</span>
+        <p>Add your photo here</p>
+      </div>
+    </div>
     <div class="about-content">
-      <h2>Why Choose Valley Edge?</h2>
-      <p>
-        We focus on professionalism, reliability, and quality service.
-        Our goal is to keep your property looking clean and impressive year-round.
-      </p>
+      <p class="section-eyebrow">Our Story</p>
+      <h2>Local Crew,<br>Real Results</h2>
+      <p>Valley Edge started with a simple belief: your yard should look great without you having to worry about it. We're a locally owned and operated crew serving the Salt Lake Valley — we live here, we work here, and we take pride in every property we touch.</p>
+      <p>We're not a big corporate operation. Every job gets our full attention, and we hold ourselves to a high standard because our reputation is built yard by yard, neighbor by neighbor.</p>
 
-      <ul>
-        <li>Reliable Scheduling</li>
-        <li>Professional Service</li>
-        <li>Attention to Detail</li>
+      <div class="about-stats">
+        <div class="stat">
+          <strong>100+</strong>
+          <span>Properties Served</span>
+        </div>
+        <div class="stat">
+          <strong>5★</strong>
+          <span>Average Rating</span>
+        </div>
+        <div class="stat">
+          <strong>2+</strong>
+          <span>Years in Business</span>
+        </div>
+      </div>
+
+      <ul class="about-list">
+        <li><span class="check">✓</span> Reliable, consistent scheduling — no no-shows</li>
+        <li><span class="check">✓</span> Licensed, insured, and professional</li>
+        <li><span class="check">✓</span> Transparent pricing, no hidden fees</li>
+        <li><span class="check">✓</span> Locally owned and community-focused</li>
       </ul>
     </div>
   </section>
 
-  <section class="contact">
-    <h2>Request a Quote</h2>
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="testimonials">
+    <div class="section-header light">
+      <p class="section-eyebrow">What People Say</p>
+      <h2>Neighbors Who Trust Valley Edge</h2>
+    </div>
 
-    <form id="quoteForm">
-      <input type="text" placeholder="Your Name" required />
-      <input type="tel" placeholder="Phone Number" required />
-      <textarea placeholder="Tell us about your project"></textarea>
-      <button type="submit">Submit Request</button>
-    </form>
+    <div class="testimonial-grid">
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>"Valley Edge has been taking care of our lawn all summer and it has never looked better. They show up on time, every time, and the edging is always on point."</p>
+        <div class="reviewer">
+          <div class="reviewer-avatar">MR</div>
+          <div>
+            <strong>Maria R.</strong>
+            <span>West Jordan, UT</span>
+          </div>
+        </div>
+      </div>
 
-    <p id="successMessage"></p>
+      <div class="testimonial-card featured">
+        <div class="stars">★★★★★</div>
+        <p>"I've tried a few different lawn services over the years and Valley Edge is the best by far. Super professional, great communication, and my yard looks amazing."</p>
+        <div class="reviewer">
+          <div class="reviewer-avatar">JT</div>
+          <div>
+            <strong>James T.</strong>
+            <span>Taylorsville, UT</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>"Hired them for a fall cleanup and they did an incredible job. Leaves, debris, everything gone. My yard looked better than it has all year. Will definitely be back."</p>
+        <div class="reviewer">
+          <div class="reviewer-avatar">SK</div>
+          <div>
+            <strong>Sarah K.</strong>
+            <span>Murray, UT</span>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <footer>
-    <p>© 2026 Valley Edge Yard Care. All rights reserved.</p>
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="contact-inner">
+      <div class="contact-info">
+        <p class="section-eyebrow">Let's Talk</p>
+        <h2>Request a Free Quote</h2>
+        <p>Tell us about your property and what you need. We'll get back to you within 24 hours with a no-obligation estimate.</p>
+        <div class="contact-details">
+          <div class="contact-item">
+            <span>📍</span>
+            <p>Serving the Salt Lake Valley</p>
+          </div>
+          <div class="contact-item">
+            <span>⏱️</span>
+            <p>Response within 24 hours</p>
+          </div>
+          <div class="contact-item">
+            <span>💬</span>
+            <p>Free estimates, no pressure</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form-wrap">
+        <form id="quoteForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" placeholder="John Smith" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" placeholder="(801) 555-0123" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="you@example.com" />
+          </div>
+          <div class="form-group">
+            <label for="address">Property Address</label>
+            <input type="text" id="address" placeholder="123 Main St, Salt Lake City" />
+          </div>
+          <div class="form-group">
+            <label for="services">Services Interested In</label>
+            <select id="services-select">
+              <option value="">Select a service...</option>
+              <option>Lawn Maintenance</option>
+              <option>Edging & Trimming</option>
+              <option>Yard Cleanup</option>
+              <option>Garden Bed Care</option>
+              <option>Shrub & Bush Trimming</option>
+              <option>Custom Package</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Additional Details</label>
+            <textarea id="message" placeholder="Tell us about your yard — size, current condition, anything specific you need..."></textarea>
+          </div>
+          <button type="submit" class="btn-submit">Send Quote Request →</button>
+        </form>
+        <p id="successMessage"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="nav-logo">
+          <span class="logo-mark">VE</span>
+          <span class="logo-text">Valley Edge</span>
+        </div>
+        <p>Professional yard care for the Salt Lake Valley. Clean results, every time.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="#contact">Get a Quote</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Valley Edge Yard Care. All rights reserved.</p>
+    </div>
   </footer>
 
   <script src="scripts/main.js"></script>

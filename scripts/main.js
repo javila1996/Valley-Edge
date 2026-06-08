@@ -1,18 +1,84 @@
-const quoteForm = document.getElementById("quoteForm");
-const successMessage = document.getElementById("successMessage");
-const quoteBtn = document.getElementById("quoteBtn");
+// =============================================
+//  VALLEY EDGE YARD CARE — main.js
+// =============================================
 
-quoteBtn.addEventListener("click", () => {
-  document.querySelector(".contact").scrollIntoView({
-    behavior: "smooth",
+// --- NAV SCROLL EFFECT ---
+const nav = document.getElementById('mainNav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 40);
+});
+
+// --- MOBILE MENU ---
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobileMenu');
+
+hamburger.addEventListener('click', () => {
+  mobileMenu.classList.toggle('open');
+});
+
+mobileMenu.querySelectorAll('.mobile-link').forEach(link => {
+  link.addEventListener('click', () => {
+    mobileMenu.classList.remove('open');
   });
 });
 
-quoteForm.addEventListener("submit", (e) => {
+// --- SCROLL REVEAL ---
+const revealElements = document.querySelectorAll(
+  '.service-card, .testimonial-card, .about-content, .about-image, .contact-info, .contact-form-wrap, .stat'
+);
+
+revealElements.forEach(el => el.classList.add('reveal'));
+
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry, i) => {
+    if (entry.isIntersecting) {
+      setTimeout(() => {
+        entry.target.classList.add('visible');
+      }, 80);
+      revealObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12 });
+
+revealElements.forEach(el => revealObserver.observe(el));
+
+// --- STAGGERED CARD REVEAL ---
+document.querySelectorAll('.service-grid, .testimonial-grid').forEach(grid => {
+  const cards = grid.querySelectorAll('.reveal');
+  cards.forEach((card, i) => {
+    card.style.transitionDelay = `${i * 80}ms`;
+  });
+});
+
+// --- QUOTE FORM ---
+const quoteForm = document.getElementById('quoteForm');
+const successMessage = document.getElementById('successMessage');
+
+quoteForm.addEventListener('submit', (e) => {
   e.preventDefault();
 
-  successMessage.textContent =
-    "Thank you! Your quote request has been submitted.";
+  const btn = quoteForm.querySelector('.btn-submit');
+  btn.textContent = 'Sending...';
+  btn.disabled = true;
 
-  quoteForm.reset();
+  // Simulate async submission
+  setTimeout(() => {
+    successMessage.textContent = '✓ Thank you! We\'ll be in touch within 24 hours.';
+    quoteForm.reset();
+    btn.textContent = 'Send Quote Request →';
+    btn.disabled = false;
+  }, 800);
+});
+
+// --- SMOOTH SCROLL for all anchor links ---
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', (e) => {
+    const target = document.querySelector(anchor.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      const offset = 80;
+      const top = target.getBoundingClientRect().top + window.scrollY - offset;
+      window.scrollTo({ top, behavior: 'smooth' });
+    }
+  });
 });
