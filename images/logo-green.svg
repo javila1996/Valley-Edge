@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   viewBox="0 0 816 288"
+   height="288"
+   width="816"
+   xml:space="preserve"
+   id="svg2"
+   version="1.1"><metadata
+     id="metadata8"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
+     id="defs6" /><g
+     transform="matrix(1.3333333,0,0,-1.3333333,0,288)"
+     id="g10"><path
+       id="path12"
+       style="fill:#2b563b;fill-opacity:1;fill-rule:evenodd;stroke:none"
+       d="M 0,216 H 612 V 0 H 0 Z" /><g
+       id="g14"><path
+         id="path16"
+         style="fill:#a2c65a;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         d="M 152.0938,170.2157 51.6163,139.8416 269.621,141.3729 Z M 18,33.8454 138.0458,38.4418 V 29.249 Z M 473.9542,38.4418 594,33.8454 473.9542,29.249 Z m -8.8277,132.2671 -2.3233,2.5679 -2.675,-4.6023 5.1321,-3.4351 z m -6.1702,0.5488 -25.9372,10.6044 26.598,7.973 70.8523,-41.7328 -63.5094,23.9803 -4.7302,4.5121 z m -86.4226,-3.6394 -40.9952,16.9018 43.2124,11.5728 123.5651,-51.5129 -101.9758,26.6561 -1.1673,2.8007 z m -84.1989,27.0439 -75.8773,-34.8786 112.5925,-18.0071 -17.3659,22.953 109.1514,-22.7948 z" /><g
+         id="g18"><text
+           id="text22"
+           style="font-variant:normal;font-weight:900;font-size:88.2555542px;font-family:Humanist531BT;-inkscape-font-specification:Humanist531BT-BlackA;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           transform="matrix(1,0,0,-0.95310713,24.7978,66.4549)"><tspan
+             id="tspan20"
+             y="0"
+             x="0 45.370029 112.356 160.02765 207.7372 256.18158 315.13629 338.14865 386.59305 448.86435 508.34085">VALLEY EDGE</tspan></text>
+<text
+           id="text26"
+           style="font-variant:normal;font-weight:bold;font-size:40.44875717px;font-family:Cabin;-inkscape-font-specification:Cabin-Bold;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           transform="matrix(1,0,0,-0.95310713,160.7457,20.4469)"><tspan
+             id="tspan24"
+             y="0"
+             x="0 33.525928 70.732971 107.98041 137.10352 158.13165 194.69144 231.8988 269.14594">YARD CARE</tspan></text>
+</g></g></g></svg>
