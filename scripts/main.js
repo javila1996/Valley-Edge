@@ -50,26 +50,6 @@ document.querySelectorAll('.service-grid, .testimonial-grid').forEach(grid => {
   });
 });
 
-// --- QUOTE FORM ---
-const quoteForm = document.getElementById('quoteForm');
-const successMessage = document.getElementById('successMessage');
-
-quoteForm.addEventListener('submit', (e) => {
-  e.preventDefault();
-
-  const btn = quoteForm.querySelector('.btn-submit');
-  btn.textContent = 'Sending...';
-  btn.disabled = true;
-
-  // Simulate async submission
-  setTimeout(() => {
-    successMessage.textContent = '✓ Thank you! We\'ll be in touch within 24 hours.';
-    quoteForm.reset();
-    btn.textContent = 'Send Quote Request →';
-    btn.disabled = false;
-  }, 800);
-});
-
 // --- SMOOTH SCROLL for all anchor links ---
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', (e) => {
